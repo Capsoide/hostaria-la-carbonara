@@ -242,14 +242,16 @@
               onfocus="this.style.borderBottomColor='var(--color-accent)'"
               onblur="this.style.borderBottomColor='#ddd'" />
             <div class="form-row" style="display: flex; gap: 20px; margin-bottom: 20px;">
-              <input type="date" id="wa-date" required onclick="this.showPicker()"
+              <input type="text" id="wa-date" placeholder="Scegli una data" required 
+                onclick="if(this.type==='date') this.showPicker()"
                 style="flex: 1; border: none; border-bottom: 1px solid #ddd; border-radius: 0; padding: 15px 5px; font-family: var(--font-heading); font-size: 1.05rem; font-weight: 300; background: transparent; outline: none; transition: border-color 0.3s; cursor: pointer;"
-                onfocus="this.style.borderBottomColor='var(--color-accent)'"
-                onblur="this.style.borderBottomColor='#ddd'" />
-              <input type="time" id="wa-time" required onclick="this.showPicker()"
+                onfocus="this.type='date'; this.style.borderBottomColor='var(--color-accent)';"
+                onblur="this.value === '' ? this.type='text' : this.type='date'; this.style.borderBottomColor='#ddd';" />
+              <input type="text" id="wa-time" placeholder="Scegli un orario" required 
+                onclick="if(this.type==='time') this.showPicker()"
                 style="flex: 1; border: none; border-bottom: 1px solid #ddd; border-radius: 0; padding: 15px 5px; font-family: var(--font-heading); font-size: 1.05rem; font-weight: 300; background: transparent; outline: none; transition: border-color 0.3s; cursor: pointer;"
-                onfocus="this.style.borderBottomColor='var(--color-accent)'"
-                onblur="this.style.borderBottomColor='#ddd'" />
+                onfocus="this.type='time'; this.style.borderBottomColor='var(--color-accent)';"
+                onblur="this.value === '' ? this.type='text' : this.type='time'; this.style.borderBottomColor='#ddd';" />
             </div>
             <div class="people-counter"
               style="width: 100%; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #ddd; padding: 15px 5px; margin-bottom: 20px;">
