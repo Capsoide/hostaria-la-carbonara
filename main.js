@@ -6,13 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
   setupWhatsAppForm();
   setupBurgerMenu();
   setupStickyNavbar();
-  
-  // Set default date to today to prevent empty native rendering on mobile
-  const dateInput = document.getElementById('wa-date');
-  if (dateInput) {
-    const today = new Date().toISOString().split('T')[0];
-    dateInput.value = today;
-  }
 });
 
 function setupStickyNavbar() {
