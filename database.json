@@ -1,0 +1,70 @@
+{
+  "alert": "prova avviso header",
+  "menu": {
+    "Antipasti": [
+      {
+        "id": "1",
+        "name": "Tagliere del Fattore",
+        "ingredients": "Salumi misti del territorio, pecorino e miele",
+        "price": 12.9,
+        "visible": true
+      },
+      {
+        "id": "2",
+        "name": "Crostini Misti",
+        "ingredients": "Fegatini, pomodoro e basilico, lardo",
+        "price": 8,
+        "visible": true
+      },
+      {
+        "name": "Tagliere del Fattore",
+        "ingredients": "boh",
+        "price": 15,
+        "visible": true,
+        "id": "1787049772850"
+      }
+    ],
+    "Primi": [
+      {
+        "id": "3",
+        "name": "La Vera Carbonara",
+        "ingredients": "Guanciale stagionato, pecorino romano DOP, uova, pepe nero",
+        "price": 14,
+        "visible": true
+      },
+      {
+        "id": "4",
+        "name": "Amatriciana",
+        "ingredients": "Guanciale, pomodoro, pecorino romano DOP, peperoncino",
+        "price": 13,
+        "visible": true
+      }
+    ],
+    "Secondi": [
+      {
+        "id": "5",
+        "name": "Abbacchio al Forno",
+        "ingredients": "Agnello con patate al rosmarino",
+        "price": 18,
+        "visible": true
+      },
+      {
+        "id": "6",
+        "name": "Saltimbocca alla Romana",
+        "ingredients": "Fettine di vitello, prosciutto crudo, salvia",
+        "price": 16,
+        "visible": true
+      }
+    ],
+    "Dolci": [
+      {
+        "id": "7",
+        "name": "Tiramisù della Casa",
+        "ingredients": "Mascarpone, savoiardi, caffè, cacao",
+        "price": 6,
+        "visible": true
+      }
+    ],
+    "Cantina": []
+  }
+}

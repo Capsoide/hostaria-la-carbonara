@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Il Nostro Menù | Hostaria La Carbonara</title>
+  <meta name="description"
+    content="Scopri il menù completo dell'Hostaria La Carbonara a Porto San Giorgio." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Dancing+Script:wght@400;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <!-- Mobile Logo (visible only on small screens) -->
+    <div class="logo logo-mobile">
+      <a href="index.html" class="custom-logo">
+        <div class="logo-icon"><i class="fa-solid fa-utensils"></i></div>
+        <div class="logo-title">Hostaria la Carbonara</div>
+        <div class="logo-subtitle">
+          <span class="line"></span>
+          <span class="text">cucina & cantina</span>
+          <span class="line"></span>
+        </div>
+      </a>
+    </div>
+
+    <button class="menu-toggle" aria-label="Apri menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    
+    <nav class="nav-links">
+      <a href="index.html#chi-siamo">Chi Siamo</a>
+      <a href="menu.html">Menù</a>
+      
+      <!-- Desktop Logo (visible only on large screens, centered) -->
+      <div class="logo logo-desktop">
+        <a href="index.html" class="custom-logo">
+          <div class="logo-icon"><i class="fa-solid fa-utensils"></i></div>
+          <div class="logo-title">Hostaria la Carbonara</div>
+          <div class="logo-subtitle">
+            <span class="line"></span>
+            <span class="text">cucina & cantina</span>
+            <span class="line"></span>
+          </div>
+        </a>
+      </div>
+      
+      <a href="index.html#galleria">Galleria</a>
+      <a href="index.html#contatti">Prenota Ora</a>
+    </nav>
+  </header>
+
+  <!-- Alert Box (Hidden by default, shown if text is present) -->
+  <div id="alert-box" class="alert-box hidden">
+    <i class="fa-solid fa-bell"></i> <span id="alert-text"></span>
+  </div>
+
+  <!-- Hero Section Menu -->
+  <section class="hero" style="height: 60vh; background-image: url('images/spaghetti_hero.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h3 class="hero-script">Scopri</h3>
+      <h1 class="hero-title">IL NOSTRO MENÙ</h1>
+      <div class="hero-separator"></div>
+    </div>
+  </section>
+
+  <!-- Menu Dinamico -->
+  <section id="menu" class="section">
+    <div class="container">
+      <div id="menu-container" class="menu-container">
+        <div class="loader">Caricamento menù...</div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Master Footer -->
+  <footer class="footer-master">
+    <div class="container">
+      <div class="footer-master-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="index.html" class="custom-logo" style="margin-bottom: 20px;">
+            <div class="logo-icon" style="color: var(--color-accent); font-size: 2rem;"><i class="fa-solid fa-utensils"></i></div>
+            <div class="logo-title" style="color: #fff; font-size: 1.8rem;">Hostaria la Carbonara</div>
+            <div class="logo-subtitle" style="color: #aaa;">
+              <span class="line" style="background-color: #555;"></span>
+              <span class="text">cucina & cantina</span>
+              <span class="line" style="background-color: #555;"></span>
+            </div>
+          </a>
+          <p style="color: #888; font-size: 0.95rem; line-height: 1.6; margin-top: 15px;">L'autentica tradizione romana. Selezione rigorosa delle materie prime e passione artigianale per la perfezione.</p>
+        </div>
+
+        <!-- Info -->
+        <div class="footer-info">
+          <h4>Vieni a trovarci</h4>
+          <p><i class="fa-solid fa-location-dot"></i> Via Roma, 12<br>Porto San Giorgio (FM)</p>
+          
+          <h4 style="margin-top: 25px;">Orari</h4>
+          <p><i class="fa-regular fa-clock"></i> Martedì - Domenica<br>19:30 - 23:30<br>Lunedì: Chiuso</p>
+        </div>
+
+        <!-- Contact & Social -->
+        <div class="footer-contact">
+          <h4>Contatti</h4>
+          <p><a href="tel:+393474024071"><i class="fa-solid fa-phone"></i> +39 3474024071</a></p>
+          
+          <div class="pet-friendly-badge">
+            <i class="fa-solid fa-dog"></i>
+            <span>Siamo Pet Friendly!</span>
+          </div>
+
+          <h4 style="margin-top: 25px;">Seguici</h4>
+          <div class="social-icons-gold">
+            <a href="https://www.instagram.com/hostaria_la_carbonara/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/p/Hostaria-la-Carbonara-61568958443290/" target="_blank" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-copyright-master">
+        &copy; 2024 Hostaria La Carbonara. Made with <i class="fa-solid fa-heart" style="color: var(--color-accent);"></i> e tanto guanciale croccante.
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
